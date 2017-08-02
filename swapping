@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class swap
+{
+	public static void main(String args[])
+	{
+		int x,y;
+		Scanner sc=new Scanner(System.in);
+		System.out.print("enter X : ");
+		x=sc.nextInt();
+		System.out.print("\n");
+		System.out.print("enter Y : ");
+		y=sc.nextInt();
+
+		x=x+y; // the biggest number now
+		y=x-y; // biggest number - smaller number will get you Y
+		x=x-y; // biggest number - smaller number will get you X
+
+		System.out.print("number X : ");
+		System.out.print(x);
+		System.out.print("\n");
+		System.out.print("number Y : ");
+		System.out.print(y);
+	}
+}
